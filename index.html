@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Guru. Лучшие рестораны мира рядом</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css?ver=1.1">
+
+
+
+</head>
+
+<body class="main-body">
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <a href="#" class="header__logo">
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="images/header/logo.svg">
+                            <img src="images/header/mobile-logo.svg" alt="logo">
+                        </picture>
+                    </a>
+                    <div class="header__end">
+                        <form class="header__search" action="">
+                            <div class="header__search-blocks">
+                                <div class="header__search-block">
+                                    <p class="header__search-text">Найти:</p>
+                                    <input class="header__search-input" type="text" placeholder="Рестораны">
+                                </div>
+                                <div class="header__search-block">
+                                    <p class="header__search-text">Где:</p>
+                                    <input class="header__search-input" type="text" placeholder="Москва">
+                                </div>
+                            </div>
+
+                            <button class="header__search-btn" type="button">
+                                <img src="images/header/search.svg" alt="">
+                            </button>
+                        </form>
+
+                        <div class="language-selector">
+                            <div class="selected-lang" tabindex="0">
+                                <img src="images/header/flag1.svg" alt="Selected Language" id="selected-flag">
+                            </div>
+                            <ul class="language-dropdown">
+                                <li class="close-dropdown" tabindex="0">✖</li>
+                                <li data-lang="ru" tabindex="0">
+                                    <img src="images/header/flag1.svg" alt="Russian">
+                                    <span>Russian</span>
+                                </li>
+                                <li data-lang="en" tabindex="0">
+                                    <img src="images/header/flag2.svg" alt="English">
+                                    <span>English</span>
+                                </li>
+                                <li data-lang="es" tabindex="0">
+                                    <img src="images/header/flag3.svg" alt="Spanish">
+                                    <span>Espanol</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <main class="main">
+            <div class="top">
+                <div class="container">
+                    <div class="top__links">
+                        <a href="#" class="top__link">
+                            Главная
+                        </a> /
+                        <a href="#" class="top__link"> Россия</a> /
+                        <a href="#" class="top__link"> Москва</a> /
+                        <a href="#" class="top__link"> Рестораны</a>
+                    </div>
+                </div>
+
+            </div>
+            <section class="section-top">
+                <div class="container">
+                    <div class="section-top__header">
+                        <h2 class="section-top__title" id="section-title">Рестораны Москвы</h2>
+                        <p class="section-top__subtitle">Все рестораны</p>
+                    </div>
+
+
+                    <div class="section-top__slider-inner">
+                        <div class="swiper-button-prev">
+                            <svg width="15" height="23" viewBox="0 0 15 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_23_27720" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                    y="0" width="15" height="23">
+                                    <path d="M0.875 0.25H14.375V22.75H0.875V0.25Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_23_27720)">
+                                    <path
+                                        d="M5.13494 11.5L13.2987 19.5776C13.8912 20.1639 13.8912 21.1211 13.2987 21.7074C12.7149 22.285 11.775 22.285 11.1913 21.7074L3.00497 13.6075L0.874972 11.5L3.00497 9.39249L11.1913 1.29256C11.775 0.714981 12.7149 0.71498 13.2987 1.29256C13.8912 1.87887 13.8912 2.83611 13.2987 3.42242L5.13494 11.5Z"
+                                        fill="#616161" class="arrow" />
+                                </g>
+                            </svg>
+
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="15" height="23" viewBox="0 0 15 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_23_27727)">
+                                    <mask id="mask0_23_27727" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                        x="0" y="0" width="15" height="23">
+                                        <path d="M14.125 0.25H0.625V22.75H14.125V0.25Z" fill="white" />
+                                    </mask>
+                                    <g mask="url(#mask0_23_27727)">
+                                        <path class="arrow"
+                                            d="M9.86506 11.5L1.70132 19.5776C1.10876 20.1639 1.10876 21.1211 1.70132 21.7074C2.28506 22.285 3.22497 22.285 3.8087 21.7074L11.995 13.6075L14.125 11.5L11.995 9.39249L3.8087 1.29256C3.22497 0.714981 2.28506 0.71498 1.70132 1.29256C1.10876 1.87887 1.10876 2.83611 1.70132 3.42242L9.86506 11.5Z"
+                                            fill="#616161" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_23_27727">
+                                        <rect width="14" height="23" fill="white" transform="translate(0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="section-top__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide section-top__item restaurant-item">
+                                    <div class="restaurant-item__top">
+                                        <img src="images/top/img.jpg" alt="restaurant" class="restaurant-item__img">
+                                        <div class="restaurant-item__opening">
+                                            <p>
+                                                Открыто до
+                                                <span>00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-item__end">
+                                        <div class="restaurant-item__header">
+                                            <h3 class="restaurant-item__title">Апшерон</h3>
+                                            <p class="restaurant-item__address-title">#4 ресторан
+                                                в
+                                                г.
+                                                Подольск</p>
+                                            <div class="restaurant-item__category">
+                                                <img src="images/top/icon3.svg" alt="category-icon"
+                                                    class="restaurant-item__category-icon">
+                                                <p class="restaurant-item__category-text">Европейская, Итальянская
+                                                    <span>кухня</span>
+                                                </p>
+                                            </div>
+                                            <div class="restaurant-item__sum">
+                                                <div class="restaurant-item__sum-icons">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                </div>
+                                                <div class="restaurant-item__sum-info">
+                                                    <img src="images/top/icon5.svg" alt="receipt"
+                                                        class="restaurant-item__receipt-icon">
+                                                    <p class="restaurant-item__sum-text">Средний чек: 1200₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="restaurant-item__info">
+                                            <div class="restaurant-item__reviews">
+                                                <div class="restaurant-item__reviews-block">
+                                                    <img src="images/top/icon1.svg" alt="review-star"
+                                                        class="restaurant-item__reviews-icon">
+                                                    <p class="restaurant-item__reviews-raiting">4.2</p>
+                                                </div>
+                                                <p class="restaurant-item__reviews-all">(842)</p>
+                                            </div>
+                                            <div class="restaurant-item__address-info">
+                                                <img src="images/top/icon2.svg" alt="address-icon"
+                                                    class="restaurant-item__address-icon">
+                                                <p class="restaurant-item__address-time">12 мин</p>
+                                            </div>
+                                            <p class="restaurant-item__distance">6,2 км</p>
+                                            <div class="restaurant-item__sum-icons restaurant-item__sum-icons--mobile">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide section-top__item restaurant-item">
+                                    <div class="restaurant-item__top">
+                                        <img src="images/top/img.jpg" alt="restaurant" class="restaurant-item__img">
+                                        <div class="restaurant-item__opening">
+                                            <p>
+                                                Открыто до
+                                                <span>00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-item__end">
+                                        <div class="restaurant-item__header">
+                                            <h3 class="restaurant-item__title">Апшерон</h3>
+                                            <p class="restaurant-item__address-title">#4 ресторан
+                                                в
+                                                г.
+                                                Подольск</p>
+                                            <div class="restaurant-item__category">
+                                                <img src="images/top/icon3.svg" alt="category-icon"
+                                                    class="restaurant-item__category-icon">
+                                                <p class="restaurant-item__category-text">Европейская, Итальянская
+                                                    <span>кухня</span>
+                                                </p>
+                                            </div>
+                                            <div class="restaurant-item__sum">
+                                                <div class="restaurant-item__sum-icons">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                </div>
+                                                <div class="restaurant-item__sum-info">
+                                                    <img src="images/top/icon5.svg" alt="receipt"
+                                                        class="restaurant-item__receipt-icon">
+                                                    <p class="restaurant-item__sum-text">Средний чек: 1200₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="restaurant-item__info">
+                                            <div class="restaurant-item__reviews">
+                                                <div class="restaurant-item__reviews-block">
+                                                    <img src="images/top/icon1.svg" alt="review-star"
+                                                        class="restaurant-item__reviews-icon">
+                                                    <p class="restaurant-item__reviews-raiting">4.2</p>
+                                                </div>
+                                                <p class="restaurant-item__reviews-all">(842)</p>
+                                            </div>
+                                            <div class="restaurant-item__address-info">
+                                                <img src="images/top/icon2.svg" alt="address-icon"
+                                                    class="restaurant-item__address-icon">
+                                                <p class="restaurant-item__address-time">12 мин</p>
+                                            </div>
+                                            <p class="restaurant-item__distance">6,2 км</p>
+                                            <div class="restaurant-item__sum-icons restaurant-item__sum-icons--mobile">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide section-top__item restaurant-item">
+                                    <div class="restaurant-item__top">
+                                        <img src="images/top/img.jpg" alt="restaurant" class="restaurant-item__img">
+                                        <div class="restaurant-item__opening">
+                                            <p>
+                                                Открыто до
+                                                <span>00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-item__end">
+                                        <div class="restaurant-item__header">
+                                            <h3 class="restaurant-item__title">Апшерон</h3>
+                                            <p class="restaurant-item__address-title">#4 ресторан
+                                                в
+                                                г.
+                                                Подольск</p>
+                                            <div class="restaurant-item__category">
+                                                <img src="images/top/icon3.svg" alt="category-icon"
+                                                    class="restaurant-item__category-icon">
+                                                <p class="restaurant-item__category-text">Европейская, Итальянская
+                                                    <span>кухня</span>
+                                                </p>
+                                            </div>
+                                            <div class="restaurant-item__sum">
+                                                <div class="restaurant-item__sum-icons">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                </div>
+                                                <div class="restaurant-item__sum-info">
+                                                    <img src="images/top/icon5.svg" alt="receipt"
+                                                        class="restaurant-item__receipt-icon">
+                                                    <p class="restaurant-item__sum-text">Средний чек: 1200₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="restaurant-item__info">
+                                            <div class="restaurant-item__reviews">
+                                                <div class="restaurant-item__reviews-block">
+                                                    <img src="images/top/icon1.svg" alt="review-star"
+                                                        class="restaurant-item__reviews-icon">
+                                                    <p class="restaurant-item__reviews-raiting">4.2</p>
+                                                </div>
+                                                <p class="restaurant-item__reviews-all">(842)</p>
+                                            </div>
+                                            <div class="restaurant-item__address-info">
+                                                <img src="images/top/icon2.svg" alt="address-icon"
+                                                    class="restaurant-item__address-icon">
+                                                <p class="restaurant-item__address-time">12 мин</p>
+                                            </div>
+                                            <p class="restaurant-item__distance">6,2 км</p>
+                                            <div class="restaurant-item__sum-icons restaurant-item__sum-icons--mobile">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide section-top__item restaurant-item">
+                                    <div class="restaurant-item__top">
+                                        <img src="images/top/img.jpg" alt="restaurant" class="restaurant-item__img">
+                                        <div class="restaurant-item__opening">
+                                            <p>
+                                                Открыто до
+                                                <span>00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-item__end">
+                                        <div class="restaurant-item__header">
+                                            <h3 class="restaurant-item__title">Апшерон</h3>
+                                            <p class="restaurant-item__address-title">#4 ресторан
+                                                в
+                                                г.
+                                                Подольск</p>
+                                            <div class="restaurant-item__category">
+                                                <img src="images/top/icon3.svg" alt="category-icon"
+                                                    class="restaurant-item__category-icon">
+                                                <p class="restaurant-item__category-text">Европейская, Итальянская
+                                                    <span>кухня</span>
+                                                </p>
+                                            </div>
+                                            <div class="restaurant-item__sum">
+                                                <div class="restaurant-item__sum-icons">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                </div>
+                                                <div class="restaurant-item__sum-info">
+                                                    <img src="images/top/icon5.svg" alt="receipt"
+                                                        class="restaurant-item__receipt-icon">
+                                                    <p class="restaurant-item__sum-text">Средний чек: 1200₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="restaurant-item__info">
+                                            <div class="restaurant-item__reviews">
+                                                <div class="restaurant-item__reviews-block">
+                                                    <img src="images/top/icon1.svg" alt="review-star"
+                                                        class="restaurant-item__reviews-icon">
+                                                    <p class="restaurant-item__reviews-raiting">4.2</p>
+                                                </div>
+                                                <p class="restaurant-item__reviews-all">(842)</p>
+                                            </div>
+                                            <div class="restaurant-item__address-info">
+                                                <img src="images/top/icon2.svg" alt="address-icon"
+                                                    class="restaurant-item__address-icon">
+                                                <p class="restaurant-item__address-time">12 мин</p>
+                                            </div>
+                                            <p class="restaurant-item__distance">6,2 км</p>
+                                            <div class="restaurant-item__sum-icons restaurant-item__sum-icons--mobile">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide section-top__item restaurant-item">
+                                    <div class="restaurant-item__top">
+                                        <img src="images/top/img.jpg" alt="restaurant" class="restaurant-item__img">
+                                        <div class="restaurant-item__opening">
+                                            <p>
+                                                Открыто до
+                                                <span>00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-item__end">
+                                        <div class="restaurant-item__header">
+                                            <h3 class="restaurant-item__title">Апшерон</h3>
+                                            <p class="restaurant-item__address-title">#4 ресторан
+                                                в
+                                                г.
+                                                Подольск</p>
+                                            <div class="restaurant-item__category">
+                                                <img src="images/top/icon3.svg" alt="category-icon"
+                                                    class="restaurant-item__category-icon">
+                                                <p class="restaurant-item__category-text">Европейская, Итальянская
+                                                    <span>кухня</span>
+                                                </p>
+                                            </div>
+                                            <div class="restaurant-item__sum">
+                                                <div class="restaurant-item__sum-icons">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                </div>
+                                                <div class="restaurant-item__sum-info">
+                                                    <img src="images/top/icon5.svg" alt="receipt"
+                                                        class="restaurant-item__receipt-icon">
+                                                    <p class="restaurant-item__sum-text">Средний чек: 1200₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="restaurant-item__info">
+                                            <div class="restaurant-item__reviews">
+                                                <div class="restaurant-item__reviews-block">
+                                                    <img src="images/top/icon1.svg" alt="review-star"
+                                                        class="restaurant-item__reviews-icon">
+                                                    <p class="restaurant-item__reviews-raiting">4.2</p>
+                                                </div>
+                                                <p class="restaurant-item__reviews-all">(842)</p>
+                                            </div>
+                                            <div class="restaurant-item__address-info">
+                                                <img src="images/top/icon2.svg" alt="address-icon"
+                                                    class="restaurant-item__address-icon">
+                                                <p class="restaurant-item__address-time">12 мин</p>
+                                            </div>
+                                            <p class="restaurant-item__distance">6,2 км</p>
+                                            <div class="restaurant-item__sum-icons restaurant-item__sum-icons--mobile">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide section-top__item restaurant-item">
+                                    <div class="restaurant-item__top">
+                                        <img src="images/top/img.jpg" alt="restaurant" class="restaurant-item__img">
+                                        <div class="restaurant-item__opening">
+                                            <p>
+                                                Открыто до
+                                                <span>00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-item__end">
+                                        <div class="restaurant-item__header">
+                                            <h3 class="restaurant-item__title">Апшерон</h3>
+                                            <p class="restaurant-item__address-title">#4 ресторан
+                                                в
+                                                г.
+                                                Подольск</p>
+                                            <div class="restaurant-item__category">
+                                                <img src="images/top/icon3.svg" alt="category-icon"
+                                                    class="restaurant-item__category-icon">
+                                                <p class="restaurant-item__category-text">Европейская, Итальянская
+                                                    <span>кухня</span>
+                                                </p>
+                                            </div>
+                                            <div class="restaurant-item__sum">
+                                                <div class="restaurant-item__sum-icons">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                </div>
+                                                <div class="restaurant-item__sum-info">
+                                                    <img src="images/top/icon5.svg" alt="receipt"
+                                                        class="restaurant-item__receipt-icon">
+                                                    <p class="restaurant-item__sum-text">Средний чек: 1200₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="restaurant-item__info">
+                                            <div class="restaurant-item__reviews">
+                                                <div class="restaurant-item__reviews-block">
+                                                    <img src="images/top/icon1.svg" alt="review-star"
+                                                        class="restaurant-item__reviews-icon">
+                                                    <p class="restaurant-item__reviews-raiting">4.2</p>
+                                                </div>
+                                                <p class="restaurant-item__reviews-all">(842)</p>
+                                            </div>
+                                            <div class="restaurant-item__address-info">
+                                                <img src="images/top/icon2.svg" alt="address-icon"
+                                                    class="restaurant-item__address-icon">
+                                                <p class="restaurant-item__address-time">12 мин</p>
+                                            </div>
+                                            <p class="restaurant-item__distance">6,2 км</p>
+                                            <div class="restaurant-item__sum-icons restaurant-item__sum-icons--mobile">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide section-top__item restaurant-item">
+                                    <div class="restaurant-item__top">
+                                        <img src="images/top/img.jpg" alt="restaurant" class="restaurant-item__img">
+                                        <div class="restaurant-item__opening">
+                                            <p>
+                                                Открыто до
+                                                <span>00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-item__end">
+                                        <div class="restaurant-item__header">
+                                            <h3 class="restaurant-item__title">Апшерон</h3>
+                                            <p class="restaurant-item__address-title">#4 ресторан
+                                                в
+                                                г.
+                                                Подольск</p>
+                                            <div class="restaurant-item__category">
+                                                <img src="images/top/icon3.svg" alt="category-icon"
+                                                    class="restaurant-item__category-icon">
+                                                <p class="restaurant-item__category-text">Европейская, Итальянская
+                                                    <span>кухня</span>
+                                                </p>
+                                            </div>
+                                            <div class="restaurant-item__sum">
+                                                <div class="restaurant-item__sum-icons">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                </div>
+                                                <div class="restaurant-item__sum-info">
+                                                    <img src="images/top/icon5.svg" alt="receipt"
+                                                        class="restaurant-item__receipt-icon">
+                                                    <p class="restaurant-item__sum-text">Средний чек: 1200₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="restaurant-item__info">
+                                            <div class="restaurant-item__reviews">
+                                                <div class="restaurant-item__reviews-block">
+                                                    <img src="images/top/icon1.svg" alt="review-star"
+                                                        class="restaurant-item__reviews-icon">
+                                                    <p class="restaurant-item__reviews-raiting">4.2</p>
+                                                </div>
+                                                <p class="restaurant-item__reviews-all">(842)</p>
+                                            </div>
+                                            <div class="restaurant-item__address-info">
+                                                <img src="images/top/icon2.svg" alt="address-icon"
+                                                    class="restaurant-item__address-icon">
+                                                <p class="restaurant-item__address-time">12 мин</p>
+                                            </div>
+                                            <p class="restaurant-item__distance">6,2 км</p>
+                                            <div class="restaurant-item__sum-icons restaurant-item__sum-icons--mobile">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-slide section-top__item restaurant-item">
+                                    <div class="restaurant-item__top">
+                                        <img src="images/top/img.jpg" alt="restaurant" class="restaurant-item__img">
+                                        <div class="restaurant-item__opening">
+                                            <p>
+                                                Открыто до
+                                                <span>00:00</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="restaurant-item__end">
+                                        <div class="restaurant-item__header">
+                                            <h3 class="restaurant-item__title">Апшерон</h3>
+                                            <p class="restaurant-item__address-title">#4 ресторан
+                                                в
+                                                г.
+                                                Подольск</p>
+                                            <div class="restaurant-item__category">
+                                                <img src="images/top/icon3.svg" alt="category-icon"
+                                                    class="restaurant-item__category-icon">
+                                                <p class="restaurant-item__category-text">Европейская, Итальянская
+                                                    <span>кухня</span>
+                                                </p>
+                                            </div>
+                                            <div class="restaurant-item__sum">
+                                                <div class="restaurant-item__sum-icons">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                    <img src="images/top/icon4_1.svg" alt="rub"
+                                                        class="restaurant-item__sum-icon">
+                                                </div>
+                                                <div class="restaurant-item__sum-info">
+                                                    <img src="images/top/icon5.svg" alt="receipt"
+                                                        class="restaurant-item__receipt-icon">
+                                                    <p class="restaurant-item__sum-text">Средний чек: 1200₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="restaurant-item__info">
+                                            <div class="restaurant-item__reviews">
+                                                <div class="restaurant-item__reviews-block">
+                                                    <img src="images/top/icon1.svg" alt="review-star"
+                                                        class="restaurant-item__reviews-icon">
+                                                    <p class="restaurant-item__reviews-raiting">4.2</p>
+                                                </div>
+                                                <p class="restaurant-item__reviews-all">(842)</p>
+                                            </div>
+                                            <div class="restaurant-item__address-info">
+                                                <img src="images/top/icon2.svg" alt="address-icon"
+                                                    class="restaurant-item__address-icon">
+                                                <p class="restaurant-item__address-time">12 мин</p>
+                                            </div>
+                                            <p class="restaurant-item__distance">6,2 км</p>
+                                            <div class="restaurant-item__sum-icons restaurant-item__sum-icons--mobile">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                                <img src="images/top/icon4_1.svg" alt="rub"
+                                                    class="restaurant-item__sum-icon">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+
+    </div>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+
+
+</html>
